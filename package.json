@@ -9,7 +9,7 @@
     "LED",     
     "NodeJS", 
     "galileo-io",
-    "jonnhy-five"
+    "johnny-five"
   ], 
   "author": {
     "name": "José Francisco Tello Ropero",
