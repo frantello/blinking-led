@@ -1,7 +1,7 @@
 {
   "name": "blinking-led",
   "description": "Intel Galileo blinking LED with NodeJS",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "keywords": [           
     "Intel",              
     "Galileo",            
