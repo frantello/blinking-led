@@ -1,12 +1,13 @@
 "use strict";
-var Galileo = require("galileo-io");
-var board = new Galileo();
+var five = require("johnny-five");
+var board = new five.Board();
 
 board.on("ready", function() {
   var pin = 13;
-  var status = 0;
-  this.pinMode(pin, this.MODES.OUTPUT);
-  setInterval(function() {
-    board.digitalWrite(pin, (status ^= 1));
-  }, 500);
+  var led = new five.Led(pin);
+  led.strobe(500);
+  // Inject led object into REPL session
+  this.repl.inject({
+    led: led
+  });
 });
